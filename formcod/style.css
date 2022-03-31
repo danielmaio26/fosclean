@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;1,200&display=swap");
+@font-face{
+  font-family: 'Open-Sans';
+  src: url("./OpenSans-Light.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-display: auto;
+}
+body{
+    background-color:#f5f7f4;
+}
+
+
+h1{
+    font-weight: 400 !important;
+}
+
+.frm{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+a{
+  color: white;
+}
+
+form input,select,textarea{
+    border-radius: 8px;
+    color: rgb(50, 50, 50);
+    background-color: rgb(250, 250, 250);
+    border-color: rgba(100, 100, 100, 0.5);
+    border-width: 1px;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 14px !important;
+    line-height: 20px;
+    font-family: 'Open-sans';
+    text-decoration: none;
+    padding: 3px 0;
+}
+
+select{
+    margin-top: -8px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+.lbl i.icono{
+    font-size: 20px;
+    color: red !important;
+}
+
+@media(min-width:768px){
+    input,select{
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+    .direcciones{
+        margin-bottom: 15px;
+    }
+
+    .btn-submit{
+        padding: 8px 0 !important;
+        width: 150px;
+    }
+
+    label{
+        width: 95%;
+    }
+}
+
+.modal h3{
+    text-align: center;
+}
+
+.error{
+    border: 1px solid red;   
+}
+
+.exit{
+    border: 1px solid green;
+    background-color: rgb(232, 240, 254) !important;
+}
+
+.notification{
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    left: 10px;
+    padding: 1.5rem 2rem;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.visible{
+    opacity: 1;
+}
+
+.notification-exit{
+    background-color: #009688;
+    color: white;
+}
+
+.notification-error{
+    background-color:#e57373;
+    color: black;
+}
+/*******************Mis estilos**************************/
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ebebebbd;
+    -webkit-box-shadow: 1px 1px 3px gray;
+            box-shadow: 1px 1px 3px gray;
+  }
+  
+  button.dropdown-toggle {
+    color: #3f4b5e;
+    background-color: #ffffff00;
+  }
+  .booking-details {
+    padding: 1em;
+    padding-bottom: 2em;
+    background: #f5f7f4;
+    text-align: center;
+
+  }
+  
+  .booking-details h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .booking-details h6 {
+    margin: 10px auto 0;
+  }
+  .booking {
+    background: #f6fbfc;
+    border-top: 2px solid #d0f0f4;
+  }
+  
+  .booking .row {
+    padding-bottom: 1em;
+  }
+  
+  .booking h6 {
+    width: 55%;
+  }
+  .whatsapp {
+    display: block;
+    position: fixed;
+    padding: 2em;
+    z-index: 20;
+    top: 75%;
+    text-align: center;
+    float: right;
+    right: 5px;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
+  
+  .whatsapp :hover {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #3f4b5e;
+    padding-right: 36px;
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: #45c3d3;
+  }
+  
+  .btn-info {
+    background: #2ce6a9;
+    padding: 9px 33px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-color: #208a71;
+  }
+  
+  .btn-info:hover {
+    background: #358474;
+  }
+  
+  .input-group-addon {
+    padding: .5rem 0.15rem;
+  }
+  
+  @media (max-width: 992px) {
+    .input-group-addon {
+      padding: .5rem .75rem;
+    }
+  }
+  
+  .add-on {
+    padding: .5rem .75rem;
+    border: 2px solid #e2e6e9;
+  }
+.center-block h2 {
+    text-align: center;
+    color: #3f4b5e;
+    margin: 0 0 30px;
+}
+/* ==============================================================
+   FOOTER
+   ============================================================== */
+   footer {
+     display: block;
+     margin-top: 2em;
+    background: #45d397;
+    padding: 40px 0;
+  }
+  
+  footer p {
+    color: white;
+    font-size: 1em;
+  }
+  footer a{
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .foot-box {
+      margin: 0 0 36px;
+    }
+  }
+  
+  .foot-box h6 {
+    color: #ffffff;
+    margin-bottom: 22px;
+  }
+
+  .social-icons {
+    margin-left: 0.5em;
+  }
+  
+  .social-icons a {
+    width: 43px;
+    height: 43px;
+    background: #2ce6a9;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    padding: 1em;
+    line-height: 1;
+  }
+  
+  .social-icons a i {
+    text-align: center;
+    display: block;
+    padding: 13px 0;
+  }
+  
+  .social-icons a:hover {
+    text-decoration: none;
+    background-color: #358474;
+    opacity: 0.6;
+  }
+  
+
+    
+
+
+
