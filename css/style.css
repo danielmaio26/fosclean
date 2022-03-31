@@ -23,8 +23,8 @@ Author: Surjith S M
    Color
    ========================================================================== */
 /********colores
-   verde claro: #83c554
-   verde oscuro: #046838 
+   Lila claro: #f57fef
+   Lila oscuro: #be16be 
    botone en hover: #96e65d
    *******/
 /*******My styles********/
@@ -883,7 +883,7 @@ video {
 }
 
 .center-block h2 span {
-  color: #2ce6a9;
+  color: #be16be;
   border-bottom: 3px solid #358474;
 }
 
@@ -1076,7 +1076,7 @@ video {
 
 .howit-wrap span {
   font-size: 130px;
-  color: #2ce6a9;
+  color: #be16be;
   padding-bottom: 0.2em;
 }
 
@@ -1289,13 +1289,13 @@ figure.effect-lily:hover p {
 }
 
 .service-title {
-  background: #2ce6a9;
+  background: #f57fef;
   text-align: center;
   padding: 40px 0;
 }
 
 .service-title h2 {
-  color: #ffffff;
+  color: #000000;
   font-size: 52px;
   font-weight: 300;
 }
@@ -1313,7 +1313,7 @@ figure.effect-lily:hover p {
 }
 
 .service-title h2 span {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #0f0f0f;
 }
 
 .service {
@@ -1342,8 +1342,8 @@ figure.effect-lily:hover p {
 }
 
 .service-link h3 span {
-  color: #45c3d3;
-  border-bottom: 3px solid #45c3d3;
+  color: #be16be;
+  border-bottom: 3px solid #be16be;
 }
 
 .service-link ul {
@@ -1356,7 +1356,7 @@ figure.effect-lily:hover p {
 }
 
 .service-link ul li i {
-  color: #45c3d3;
+  color: #be16be;
   padding-right: 12px;
 }
 
@@ -1369,7 +1369,7 @@ figure.effect-lily:hover p {
 }
 
 .service-link ul li a.btn.btn-info {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .service-link ul li a:hover {
@@ -1882,7 +1882,7 @@ footer p {
   content: "";
   width: 60px;
   height: 6px;
-  background: #71bf44;
+  background: #be16be;
   left: 50%;
   bottom: -17px;
   -webkit-transform: translate(-50%);
