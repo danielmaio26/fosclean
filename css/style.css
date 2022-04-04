@@ -884,7 +884,7 @@ video {
 
 .center-block h2 span {
   color: #be16be;
-  border-bottom: 3px solid #358474;
+  border-bottom: 3px solid #be16be;
 }
 
 .center-block h6 {
@@ -1561,7 +1561,7 @@ footer p {
 }
 
 .copyright a {
-  color: #ffffff;
+  color: #000000;
   margin: 20px;
 }
 
