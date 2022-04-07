@@ -23,9 +23,10 @@ Author: Surjith S M
    Color
    ========================================================================== */
 /********colores
-   Lila claro: #f57fef
-   Lila oscuro: #be16be 
+   Lila claro: #f57fef cambiar por: #8c52ff
+   Lila oscuro: #be16be cambiar por: #8c52ff
    botone en hover: #96e65d
+   fondo header/footer: #dad2d2
    *******/
 /*******My styles********/
 body{
@@ -44,7 +45,7 @@ article.description p {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #ebebebbd;
+  background-color: #dad2d2;
   -webkit-box-shadow: 1px 1px 3px gray;
           box-shadow: 1px 1px 3px gray;
 }
@@ -64,9 +65,9 @@ button.dropdown-toggle {
 .slider-content .btn-front {
   padding: 0.6em 1em;
   font-weight: 600;
-  background: #bb17b3;
+  background: #8c52ff;
   border: 1px solid;
-  border-color: #bb17b3;
+  border-color: #8c52ff;
   color: white;
   font-size: 2rem;
   line-height: 1.25;
@@ -601,15 +602,15 @@ header {
 }
 
 .btn-info {
-  background: #f57fef;
+  background: #8c52ff;
   padding: 9px 33px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-color: #f57fef;
+  border-color: #8c52ff;
 }
 
 .btn-info:hover {
-  background: #be16be;
+  background: #8c52ff;
 }
 
 .input-group-addon {
@@ -835,21 +836,21 @@ video {
   font-size: 20px;
   font-weight: bold;
   padding: 17px 28px;
-  background: #2cce74;
+  background: #8c52ff;
   border: none;
 }
 
 .btn-success:hover {
-  background: #1fb35f;
+  background: #8c52ff;
 }
 
 .btn-form {
   font-size: 30px;
   padding: 17px;
   width: 32%;
-  background: #2ce6a9;
+  background: #8c52ff;
   color: #ffffff;
-  border: solid 1px #358474;
+  border: solid 1px #8c52ff;
   cursor: pointer;
 }
 
@@ -883,8 +884,8 @@ video {
 }
 
 .center-block h2 span {
-  color: #be16be;
-  border-bottom: 3px solid #be16be;
+  color: #8c52ff;
+  border-bottom: 3px solid #8c52ff;
 }
 
 .center-block h6 {
@@ -1076,7 +1077,7 @@ video {
 
 .howit-wrap span {
   font-size: 130px;
-  color: #be16be;
+  color: #8c52ff;
   padding-bottom: 0.2em;
 }
 
@@ -1289,7 +1290,7 @@ figure.effect-lily:hover p {
 }
 
 .service-title {
-  background: #d149bc;
+  background: #8c52ff;
   text-align: center;
   padding: 40px 0;
 }
@@ -1342,8 +1343,8 @@ figure.effect-lily:hover p {
 }
 
 .service-link h3 span {
-  color: #be16be;
-  border-bottom: 3px solid #be16be;
+  color: #8c52ff;
+  border-bottom: 3px solid #8c52ff;
 }
 
 .service-link ul {
@@ -1356,7 +1357,7 @@ figure.effect-lily:hover p {
 }
 
 .service-link ul li i {
-  color: #be16be;
+  color: #8c52ff;
   padding-right: 12px;
 }
 
@@ -1449,7 +1450,7 @@ figure.effect-lily:hover p {
    FOOTER
    ============================================================== */
 footer {
-  background: #f57fef;
+  background: #dad2d2;
   padding: 40px 0;
 }
 
@@ -1496,7 +1497,7 @@ footer p {
 .social-icons a {
   width: 43px;
   height: 43px;
-  background: #be1eb6;
+  background: #8c52ff;
   color: white;
   border-radius: 50%;
   display: inline-block;
@@ -1513,19 +1514,19 @@ footer p {
 
 .social-icons a:hover {
   text-decoration: none;
-  background-color: #f57fef;
+  background-color: #8c52ff;
   opacity: 0.6;
 }
 
 .subscribe-form {
   padding: 17px 14px;
   border-radius: 2px;
-  border: 2px solid #be1eb6;
+  border: 2px solid #8c52ff;
 }
 
 .subscribe-form::-webkit-input-placeholder {
   /* Chrome */
-  color: #f57fef;
+  color: #8c52ff;
 }
 
 .form-inline .input-group {
@@ -1533,7 +1534,7 @@ footer p {
 }
 
 .subscribe-btn {
-  background: #bb17b3;
+  background: #8c52ff;
   color: #ffffff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1541,7 +1542,7 @@ footer p {
 }
 
 .subscribe-btn:hover {
-  background: #bb17b3;
+  background: #8c52ff;
 }
 
 .subscribe-btn span {
@@ -1570,7 +1571,7 @@ footer p {
    ============================================================== */
 .header-style2 {
   padding: 12px 0;
-  background: #ffffff;
+  background: #dad2d2;
   border-bottom: 1px solid #efefef;
 }
 
@@ -1744,7 +1745,7 @@ footer p {
   font-size: 28px;
   font-weight: bold;
   padding: 17px 28px;
-  background: #2cce74;
+  background: #8c52ff;
   border: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1758,7 +1759,7 @@ footer p {
 }
 
 .landing-2 .slider-content a:hover {
-  background: #35e181;
+  background: #8c52ff;
 }
 
 .landing-2 .slider-content a:focus {
@@ -1806,7 +1807,7 @@ footer p {
 }
 
 .howit-block .howit-wrap span {
-  color: #71bf44;
+  color: #8c52ff;
 }
 
 .howit-block .howit-wrap h4 {
@@ -1848,8 +1849,8 @@ footer p {
 }
 
 .why-choose-list li a i {
-  color: #bb17b3;
-  border: 1px solid #bb17b3;
+  color: #8c52ff;
+  border: 1px solid #8c52ff;
   border-radius: 50%;
   padding: 10px;
   float: left;
@@ -1882,7 +1883,7 @@ footer p {
   content: "";
   width: 60px;
   height: 6px;
-  background: #be16be;
+  background: #8c52ff;
   left: 50%;
   bottom: -17px;
   -webkit-transform: translate(-50%);
@@ -2004,7 +2005,7 @@ footer p {
 }
 
 .speciality-description ul li span {
-  color: #71bf44;
+  color: #8c52ff;
   font-size: 40px;
   vertical-align: top;
   line-height: 0.6;
@@ -2095,7 +2096,7 @@ footer p {
 }
 
 .private a {
-  color: #71bf44;
+  color: #8c52ff;
   text-decoration: none;
   opacity: 1;
   -webkit-transition: 0.2s;
@@ -2309,7 +2310,7 @@ footer p {
 
 .payment-icon {
   float: right;
-  border: 1px solid #71bf44;
+  border: 1px solid #8c52ff;
   padding: 3px 16px;
   border-radius: 5px;
 }
@@ -2322,7 +2323,7 @@ footer p {
 }
 
 .payment-icon i {
-  color: #71bf44;
+  color: #8c52ff;
   font-size: 26px;
   vertical-align: top;
   line-height: 1.3;
@@ -2331,7 +2332,7 @@ footer p {
 .payment-icon p {
   display: inline-block;
   margin: 0 0 0 6px;
-  color: #71bf44;
+  color: #8c52ff;
   font-size: 10px;
 }
 
@@ -2514,7 +2515,7 @@ footer p {
 }
 
 .complete-booking {
-  background: #88ce43;
+  background: #8c52ff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 17px;
@@ -2537,7 +2538,7 @@ footer p {
 .complete-booking:hover {
   color: #fff;
   text-decoration: none;
-  background: #98e24f;
+  background: #8c52ff;
 }
 
 .complete-booking span {
