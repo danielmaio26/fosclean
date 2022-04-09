@@ -274,7 +274,8 @@ ul.linko li a:hover {
   max-height: 300px;
   width: auto;
   margin-top: 1em;
-  border: solid 2px #358474;
+  border-radius: 50%;
+  /*border: none 2px #358474;*/
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -849,7 +850,7 @@ video {
   padding: 17px;
   width: 32%;
   background: #8c52ff;
-  color: #ffffff;
+  color: #000000;
   border: solid 1px #8c52ff;
   cursor: pointer;
 }
