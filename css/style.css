@@ -850,7 +850,7 @@ video {
   padding: 17px;
   width: 32%;
   background: #8c52ff;
-  color: #000000;
+  color: #ffffff;
   border: solid 1px #8c52ff;
   cursor: pointer;
 }
@@ -1297,7 +1297,7 @@ figure.effect-lily:hover p {
 }
 
 .service-title h2 {
-  color: #000000;
+  color: #ffffff;
   font-size: 52px;
   font-weight: 300;
 }
@@ -1315,7 +1315,7 @@ figure.effect-lily:hover p {
 }
 
 .service-title h2 span {
-  border-bottom: 3px solid #0f0f0f;
+  border-bottom: 3px solid #ffffff;
 }
 
 .service {
@@ -1371,7 +1371,7 @@ figure.effect-lily:hover p {
 }
 
 .service-link ul li a.btn.btn-info {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .service-link ul li a:hover {
