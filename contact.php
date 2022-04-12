@@ -38,7 +38,7 @@
             http_response_code(200);
             echo '<script language="javascript">
             alert("Thanks! We will contact you soon");
-            window.location= "contact.html"
+            window.location= "/index.html/#contact"
             </script>';
 
         } else {
@@ -46,7 +46,7 @@
             http_response_code(500);
             echo '<script language="javascript">
             alert("Oops! Something went wrong, please try again later.");
-            window.location= "contact.html"
+            window.location= "/index.html/#contact"
             </script>';
         }
 
@@ -55,7 +55,7 @@
         http_response_code(403);
         echo '<script language="javascript">
         alert("Oops! Something went wrong, please try again.");
-        window.location= "contact.html"
+        window.location= "/index.html/#contact"
         </script>';
     }
 
