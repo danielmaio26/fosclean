@@ -32,12 +32,12 @@ try {
     $mail->addAddress('info@fosclean.com', $nombre);     //Add a recipient
 
     //Content
-    $mail->isHTML(true);                                 //Set email format to HTML
+    $mail->isHTML(true);                        //Set email format to HTML
     $mail->Subject = 'Mensaje desde formulario de contacto';
     $mail->Body    = $body;
 
     $mail->send();
-    echo 'Message has been sent';
+    echo "Thanks for sending your message! We'll get back to you shortly.";
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
