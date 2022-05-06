@@ -19,17 +19,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="/imagenes/logos/favicon.png" /> 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
-    <script>
-        function onClick(e) {
-          e.preventDefault();
-          grecaptcha.ready(function() {
-            grecaptcha.execute('6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB', {action: 'submit'}).then(function(token) {
-                // Add your logic to submit to your backend server here.
-            });
-          });
-        }
-    </script>
 
 </head>
 
@@ -464,16 +453,10 @@
                         class="form-control" name="message" id="message"
                         cols="30" rows="5"></textarea>
                 </div>
-                <div class="form-group">
-                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                    <div class="g-recaptcha" data-sitekey="6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></div>
-                </div>
-                <button class="g-recaptcha btn btn-info" 
-                    data-sitekey="6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB" 
-                    data-callback='onSubmit' 
-                    data-action='submit'>Submit
-                </button>
+                <button class="btn btn-form" type="submit"
+            
+            data-callback='onSubmit' 
+            data-action='submit'>Submit</button>
     
             </form>
         </div>
