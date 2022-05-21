@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="/imagenes/logos/favicon.png" /> 
-
+    <script src="https://www.google.com/recaptcha/api.js?6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
 </head>
 
 <body>
@@ -434,8 +434,9 @@
         <div class="col-md-12">
     </div>
     </section>
+    <input type="hidden" name="token_generate" id="token_generate">
     <section class="form">
-    <div class="contact" id="contact">
+        <div class="contact" id="contact">
             <form method="POST" action="sendmail.php">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -455,11 +456,11 @@
                 </div>
                 <button class="btn btn-form" type="submit"
             
-            data-callback='onSubmit' 
-            data-action='submit'>Submit</button>
-    
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>
             </form>
         </div>
+    </section>
     <!--//END BOOKING -->
     <!--============================= FOOTER =============================-->
     <footer>
@@ -521,6 +522,19 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
+<script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB', {action: 'submit'}).then(function(token) {
+            // Add your logic to submit to your backend server here.
+            var response = document.getElementById('token_generate');
+            response.value = token;
+        });
+      });
+    }
+</script>
