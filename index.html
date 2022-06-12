@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="https://i.imgur.com/wHZ1bZj.png" /> 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
 
 <body>
@@ -454,10 +455,16 @@
                         class="form-control" name="message" id="message"
                         cols="30" rows="5"></textarea>
                 </div>
-                <button class="btn btn-form" type="submit"
-            
-                data-callback='onSubmit' 
-                data-action='submit'>Submit</button>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div>
+                    <button class="btn btn-form" type="submit"
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit</button>
+                </div>
             </form>
         </div>
     </section>
@@ -522,11 +529,11 @@
     <script>
         AOS.init();
     </script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>
-<script>
+<!-- <script>
     function onClick(e) {
       e.preventDefault();
       grecaptcha.ready(function() {
@@ -537,4 +544,4 @@
         });
       });
     }
-</script>
+</script> -->
