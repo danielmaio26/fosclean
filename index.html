@@ -18,9 +18,26 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="https://i.imgur.com/wHZ1bZj.png" /> 
-    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <link rel="icon" href="https://i.imgur.com/wHZ1bZj.png" />
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn-submit').click(function() {
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB', {
+                        action: 'validarUsuario'
+                        }).then(function(token) {
+                        $('#form-group').prepend('<input type="hidden" name="token" value="' + token + '" >');
+                        $('#form-group').prepend('<input type="hidden" name="action" value="validarUsuario" >');
+                        $('#form-group').submit();
+                    });
+                });
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -435,7 +452,7 @@
         <div class="col-md-12">
     </div>
     </section>
-    <input type="hidden" name="token_generate" id="token_generate">
+    <!-- <input type="hidden" name="token_generate" id="token_generate"> -->
     <section class="form">
         <div class="contact" id="contact">
             <form method="POST" action="sendmail.php">
@@ -455,15 +472,17 @@
                         class="form-control" name="message" id="message"
                         cols="30" rows="5"></textarea>
                 </div>
-                <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                <!--<div class="form-group">
+                    <div class="g-recaptcha" 
+                        data-sitekey="6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"
+                        data-callback="verifyRecaptchaCallback"
+                        data-expired-callback="expiredRecaptchaCallback">
+                    </div>
                     <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
                     <div class="help-block with-errors"></div>
-                </div>
+                </div> -->
                 <div>
-                    <button class="btn btn-form" type="submit"
-                    data-callback='onSubmit' 
-                    data-action='submit'>Submit</button>
+                    <button class="btn btn-form" type="button" id="btn-submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -529,19 +548,7 @@
     <script>
         AOS.init();
     </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </body>
 
 </html>
-<!-- <script>
-    function onClick(e) {
-      e.preventDefault();
-      grecaptcha.ready(function() {
-        grecaptcha.execute('6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB', {action: 'submit'}).then(function(token) {
-            // Add your logic to submit to your backend server here.
-            var response = document.getElementById('token_generate');
-            response.value = token;
-        });
-      });
-    }
-</script> -->
