@@ -18,33 +18,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="https://i.imgur.com/wHZ1bZj.png" />
+    <link rel="icon" href="https://i.imgur.com/wHZ1bZj.png" /> 
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
-		
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
-    
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB"></script>
-    
-    
-    <script>
-        $(document).ready(function() {
-            $('#enviarForm').click(function() {
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6LfZP6wfAAAAAKd1yZqnP7yUlbv1xb0WrMyIk7pB', {
-                        action: 'validarUsuario'
-                        }).then(function(token) {
-                        $('#formContact').prepend('<input type="hidden" name="token" value="' + token + '" >');
-                        $('#formContact').prepend('<input type="hidden" name="action" value="validarUsuario" >');
-                        $('#formContact').submit();
-                    });
-                });
-            });
-        });
-    </script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -459,6 +435,7 @@
         <div class="col-md-12">
     </div>
     </section>
+    <!-- <input type="hidden" name="token_generate" id="token_generate"> -->
     <section class="form">
         <div class="contact" id="contact">
             <form id="formContact" method="POST" action="sendmail.php">
@@ -478,8 +455,11 @@
                         class="form-control" name="message" id="message"
                         cols="30" rows="5"></textarea>
                 </div>
+                <div class="mb-3">
+                    <div class="g-recaptcha" data-sitekey="6LegTIggAAAAAF-voQV3SDWhdc9k0zvxETZxUKXc"></div>
+                </div>
+
                 <button type="submit" id="enviarForm" class="btn btn-form">Submit</button>
-                </form>
             </form>
         </div>
     </section>
