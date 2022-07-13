@@ -4,7 +4,7 @@ $nombre = $_POST["name"];
 $email = $_POST["email"];
 $mensaje = $_POST["message"];
 $body = "Nombre y Apellido: " . $nombre . "<br>Correo: " . $email . "<br>Mensaje: " . $mensaje; 
-//$minombre = "Francisco";
+
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -52,9 +52,9 @@ if($datos['success'] == 1 && $datos['score'] >= 0.5){
         $mail->Port       = 587;                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('info@fosclean.com', $nombre); //Linea vieja: $mail->setFrom('info@fosclean.com', $nombre); Linea nueva: $mail->setFrom($email, $nombre);
+        $mail->setFrom($_POST['email'], $_POST['name']);
         $mail->addAddress('info@fosclean.com', $nombre);
-        //$mail->addRepplyTo($email, $nombre); //Linea vieja: (vacía, jajá)
+        $mail->addRepplyTo($_POST['email'], $_POST['name']);
 
         //Content
         $mail->isHTML(true);                        //Set email format to HTML
@@ -73,4 +73,3 @@ if($datos['success'] == 1 && $datos['score'] >= 0.5){
     } else {
     echo "ERES UN ROBOT";
 }
-
